@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+
+    --color1: hsl(233, 47%, 7%);
+    --color2: hsl(244, 38%, 16%);
+    --color3:hsl(277, 64%, 61%);
+    --color4: hsl(0, 0%, 100%);
+    --color5:hsla(0, 0%, 100%, 0.75);
+    --color6:hsla(0, 0%, 100%, 0.6);
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    background: var(--color1);
+    color:#fff;
+}
+.container{
+
+    min-height: 100vh;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.card {
+    width : 20.625rem;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+.card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    overflow: hidden;
+    position:relative;
+}
+.card__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    overflow: hidden;
+}
+.card__img::after{
+
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index:10;
+    background: var(--color3);
+    content: '';
+    opacity: 0.7;
+}
+.card__content {
+
+    background: var(--color2);
+    padding:3rem 1rem 1rem  1rem;
+}
+.card__title {
+
+    
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+
+}
+span {
+
+    color: var(--color3);
+}
+
+.card__p {
+
+    color: var(--color5);
+    font-family: 'Inter', sans-serif;
+    margin-top: 1rem;
+    text-align: center;
+    padding: 0 .8rem;
+}
+.card__info {
+
+    display:flex;
+    justify-content: center;
+    margin: 1rem 0;
+
+}
+.card__li {
+
+    list-style: none;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: var(--color4);
+}
+.card__li p {
+
+    font-size: .8rem;
+    font-weight: 400;
+    margin-top: .5rem;
+    color: var(--color6);
+    font-family: 'Inter', sans-serif;
+    text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+
+    .card {
+
+        width: 62.5rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .card__img {
+
+        grid-column: 2;
+        grid-row:1/3;
+        
+    }
+    .card__img img{
+
+        content: url(./images/image-header-desktop.jpg);
+    }
+        
+
+        
+    .card__info ul {
+
+        display:flex;
+    }
+    .card__content {
+
+        grid-row: 1/3;
+        text-align: left;
+        padding:3rem;
+    }
+    .card__p {
+    
+        padding: 1.5rem 0;
+
+
+        text-align: left;
+    }
+    .card__li {
+    
+        margin-right: 3.6rem;
+
+    }
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+
+
+
+    
+
+
+
+
+
+
+
+
+
